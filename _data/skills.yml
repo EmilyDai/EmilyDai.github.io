@@ -5,6 +5,6 @@
     descr: Django
     color: teal
     xp: 6
--   id: C++
-    descr: C++
-    xp: 6
+-   id: c++
+    descr: c++   
+    xp: 3
