@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "python3.5下的阿里云邮件推送集成"
-color:  teal
+color:  green
 width:   6
 height:  1
 date:   2016-08-28 11:31:49 +0800
@@ -19,8 +19,6 @@ import time
 import uuid  
 import requests  
 from django.conf import settings  
-from mail.utils import process_failed_mail  
-from mail import constant  
 import datetime  
 
 
@@ -93,13 +91,8 @@ def send_mail(mail):
         url = aliyun.make_url(data)  
         response = requests.get(url)  
         if response.status_code != 200:  
-            mail = process_failed_mail(mail)  
             return False, 'send error'  
     except requests.Timeout:  
-        mail = process_failed_mail(mail)  
         return False, 'time out'  
-    mail.finish_time = datetime.datetime.now()  
-    mail.status = constant.STATUS_FINISHED  
-    mail.save()  
     return True, 'success'
 </code></pre>
