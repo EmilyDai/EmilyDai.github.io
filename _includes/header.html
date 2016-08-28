@@ -1,99 +1,43 @@
-<span class="mobile btn-mobile-menu">
-  <i class="icon icon-list btn-mobile-menu__icon"></i>
-  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
-</span>
-  
-<header class="panel-cover" style="background-image: url({{ "images/cover.jpg" | prepend: site.baseurl }})">
-  <div class="panel-main">
+  <header id="header">
+    <div class="headerWrap clearfix">
+      <a class="myFont title css2dcc4b9955748" href="{{ "/home" | prepend: site.baseurl }}">{{ site.title }}</a>
 
-    <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
-        <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
-          <img src="{{ "images/profile.jpg" | prepend: site.baseurl }}" class="user-image" alt="My Profile Photo">
-          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
-        </a>
-        <hr class="panel-cover__divider">
-        <p class="panel-cover__description">{{ site.description }}</p>
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
+      <nav>
+        <ul>
+          <li><a href="{{ "/home" | prepend: site.baseurl }}" class="myFont css2dcc4b9955748">Home</a></li>
+          <li><a href="{{ "/index" | prepend: site.baseurl }}" class="myFont css2dcc4b9955748">Blog</a></li>
+          <li><a href="{{ "/about" | prepend: site.baseurl }}" class="myFont css2dcc4b9955748">About</a></li>
+        </ul>
+      </nav>
 
-        <div class="navigation-wrapper">
+<div class="search-tool" style="float: left;height: 45px;line-height: 45px;margin-left: 12px;">
+    <input type="text" class="form-control search-content" id="search-content" style="display: inline-block !important; 
+    color: #49525c;
+    font-size: 14px;
+    line-height: 17px;
+    background-color: #e1eaf2;
+    border: 1px solid #045bb2;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.2),0 1px 0 rgba(255,255,255,.1);
+    outline: 0;
+    box-sizing: border-box;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;" placeholder="Search for what you are interested in...." />
+</div>
 
-          <nav class="cover-navigation cover-navigation--primary">
-            <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
-            </ul>
-          </nav>
+<link rel="stylesheet" href="{{ "/search/css/cb-search.css" | prepend: site.baseurl }}">
 
-          <nav class="cover-navigation navigation--social">
-            <ul class="navigation">
-          
-            {% if site.author.twitter_username %}
-              <!-- Twitter -->
-              <li class="navigation__item">
-                <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-                  <i class="icon icon-social-twitter"></i>
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-            {% endif %}
+<script src="{{ "/search/js/bootstrap3-typeahead.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/search/js/cb-search.js" | prepend: site.baseurl }}"></script>
 
-            {% if site.author.facebook_username %}
-              <!-- Facebook -->
-              <li class="navigation__item">
-                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="icon icon-social-facebook"></i>
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-            {% endif %}
-
-            {% if site.author.linkedin_username %}
-              <!-- LinkedIn -->
-              <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                  <i class="icon icon-social-linkedin"></i>
-                  <span class="label">LinkedIn</span>
-                </a>
-              </li>
-            {% endif %}
-
-            {% if site.author.github_username %}
-              <!-- GitHub -->
-              <li class="navigation__item">
-                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="icon icon-social-github"></i>
-                  <span class="label">GitHub</span>
-                </a>
-              </li>
-            {% endif %}
-
-            {% if site.author.email %}
-              <!-- Email -->
-              <li class="navigation__item">
-                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="icon icon-mail"></i>
-                  <span class="label">Email</span>
-                </a>
-              </li>
-            {% endif %}
-
-            <!-- RSS -->
-            <li class="navigation__item">
-              <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
-                <i class="icon icon-rss"></i>
-                <span class="label">RSS</span>
-              </a>
-            </li>
-          
-            </ul>
-          </nav>
-
-        </div>
-
-      </div>
-
+      <a href="{{ site.resume }}" class="master">
+        <div class="avatarWrap">
+          <img src="{{ "/assets/avatar.jpg" | prepend: site.baseurl }}" alt="{{ site.author }}" style="max-width: 27px;" />
+        </div><span class="myFont css2dcc4b9955748">{{ site.author }}</span>
+      </a>
     </div>
+  </header>
 
-    <div class="panel-cover--overlay"></div>
-  </div>
-</header>
+  <main class="clearfix">
+    <div class="content">
+      <div class="content-inner">

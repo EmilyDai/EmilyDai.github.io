@@ -1,39 +1,44 @@
 # Site settings
-title: Jekyll-Uno
-description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
-url: 'http://joshgerdes.com/jekyll-uno'
-baseurl: '/jekyll-uno/'
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+title: BoHu
+url: "http://zhaoyuxiang.cn/blog"    # the protocol and hostname of your site, eg. `http://zhaoyuxiang.cn/blog`
+baseurl: "/bohu-jekyll-theme" # the prefix of your site uri, eg. `/bohu-jekyll-theme` or just one slash `/`
+#timezone: Asia/Shanghai
+description: 天道总司的个人博客网站,前端HTML、HTML5、CSS、CSS3、JavaScript、JQuery等编程经验总结分享。
+# Your information
+email: me@zhaoyuxiang.cn
+author: Clark #yourname #天道总司
+place: yourhometown #杭州
+domain: yourdoamain #互联网
+company: yourcompany #Jeeyoo
+position: yourjob #Technical Support
+school: yourschool #浙江科技学院
+major: yourmajoy #测控技术与仪器
+resume: "http://zhaoyuxiang.cn/cv"
+profile: Time is money. #yourmotto #聪明在于勤奋，天才在于积累。
+twitter_username: zyx19936688
+weibo_username:  zhaoyuxiang
+github_username:  Clark-Zhao
 
-author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+# Comment Service (Disqus or 多说)
+#  choose one and un-comment the line to active it
+disqus_shortname: zhaoyuxiang   
+# get one: https://disqus.com/admin/signup/
+# duoshuo_shortname: clark-zhao  
+# get one: http://duoshuo.com/create-site/
 
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
+permalink: /archivers/:title
+gems:
+ - jekyll-paginate
+ - jekyll-gist
+ - jemoji
 
 # Build settings
-destination: _site
-paginate: 10
-permalink: /:year/:title/
-markdown: kramdown
+paginate: 2
+paginate_path: "/page:num"
+
 highlighter: rouge
+markdown: kramdown
 
 kramdown:
-  # use Github Flavored Markdown
   input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
-
-gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+  syntax_highlighter: rouge
