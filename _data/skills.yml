@@ -1,0 +1,10 @@
+-   id: Python
+    descr: Python
+    xp: 6
+-   id: Django
+    descr: Django
+    color: teal
+    xp: 6
+-   id: C++
+    descr: C++
+    xp: 6

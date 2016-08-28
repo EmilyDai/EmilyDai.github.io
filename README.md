@@ -1,28 +1,21 @@
-# BoHu 
+# Jekyll template
+Beautiful responsive portfolio style template for designers and web developers
 
-It's a simple jekyll blog theme. 
-  
-A style of ZhiHu - the best-known website to share knowledge in China.   
+[![Gitter](https://badges.gitter.im/nikrich/jekyll-slender-template.svg)](https://gitter.im/nikrich/jekyll-slender-template?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Twitter](https://img.shields.io/badge/Twitter-@slender_rich-blue.svg?style=flat)](https://twitter.com/slender_rich)
 
-In the ZhiHu, you can learn knowledge from all over the world.   
+![preview](http://i.imgur.com/9Nz6Ib9.jpg)
 
-In the BoHu, you can share knowledge to all over the world!
+## Demo
+Find a demo [here](http://nikrich.github.io/jekyll-slender-template/#)
 
-1. **Use paging as 1,2,3,4,5......**   
-1. **Searchable for blog.**    
-1. **Classification is supported.**   
-1. **Good compatibility on mobile devices.**    
-1. **Built-in wordart for English and Chinese.**   
-1. **Music player.**   
-**......**
+## Contributing
 
-**Make it yours in under 10 minutes.**  
-
-# Author
-
-[Clark Zhao](http://zhaoyuxiang.cn)
+1. Clone the repo
+2. Checkout the dev branch ( Do not work directly on master )
+3. Use ```jekyll serve``` to run the project
+4. Make your changes and test
+5. Submit a pull request
 
 
-# License
-
-Use MIT License.
+Inspired by [Balraj Chana](https://dribbble.com/shots/2380700-New-Portfolio-Site-Live)
