@@ -1,32 +1,45 @@
-# About
+# jekyll-uno
 
-This is my blog based on jekyll. And I change the style and interactive. If you want to use this model of the blog. **Please give a star at this repository**. Then you can clone it as your blog model.
+Jekyll-Uno - a minimal, responsive theme for Jekyll based on the [Uno](https://github.com/daleanthony/Uno) theme for Ghost.
 
-You can visit [here](http://gaohaoyang.github.io) to see this blog.
+> :warning:
+  This theme requires ruby and rubygems installed
+
+### Features
+
+* Clean layout
+* Resposive layout
+* Pagination
+* Syntax highlighting
+* Social links
+* Tags listing page
+* Categories listing page
+* Google Analytics integration
+* Disqus integration
 
 ---
 
-这是我的博客，基于 jekyll。我改了所有默认的样式和交互。如果你想使用这个博客模板。**请先在这个仓库上点个star吧**，这也是对我的肯定和鼓励，谢谢了。然后你可以克隆这个仓库用作你自己的博客。
+### Install and Test
 
-博客访问地址：[点击这里](http://gaohaoyang.github.io)
+1. Download or clone repo `git clone git@github.com:joshgerdes/jekyll-uno.git`
+2. Enter the folder: `cd jekyll-uno/`
+3. If you don't have bundler installed: `gem install bundler`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `jekyll serve`
 
-**使用时请注明模板来源:  Jekyll theme by [Gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io)**
+Access via: [http://localhost:4000/jekyll-uno](http://localhost:4000/jekyll-uno)
 
-<!--
+---
 
-## 被引用信息
+### Demo and Download
 
-使用了我的模板并写明来源的人：   
+[Demo](http://joshgerdes.com/jekyll-uno/)
+[Download](https://github.com/joshgerdes/jekyll-uno/archive/master.zip)
 
-* [dreamholy](http://dreamholy.github.io/)
+![jekyll-uno - free Jekyll theme](/screenshot.png)
 
-没有注明来源的人：
+---
 
-* [yangshuailing](http://yangshuailing.github.io/com/)
-* [huapu728](http://huapu728.github.io/)
-* [greatbuger](http://greatbuger.github.io/) 
+### Copyright and license
 
-
--->
-
-
+It is under [the MIT license](/LICENSE).
